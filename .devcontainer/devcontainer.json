@@ -1,0 +1,17 @@
+{
+	"name": "Python DevContainer",
+	"image": "mcr.microsoft.com/devcontainers/python:3.9",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python"
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			]
+		}
+	},
+	"postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pip install poetry && poetry install",
+	"remoteUser": "vscode"
+}
