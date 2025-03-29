@@ -12,6 +12,6 @@
 			]
 		}
 	},
-	"postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pip install poetry && poetry install",
+	"postCreateCommand": "./.devcontainer/post-create.sh",
 	"remoteUser": "vscode"
 }
