@@ -7,5 +7,8 @@ git config pull.ff true
 pip install poetry
 poetry install
 
+# Install poetry-shell plugin
+poetry self add poetry-plugin-shell
+
 # Activate poetry venv (for pylance auto-import)
-npx vscode-tasks run poetry-activate-venv
+poetry shell
